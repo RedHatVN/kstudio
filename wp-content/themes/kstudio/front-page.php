@@ -28,8 +28,26 @@
             <div class="cycle-next"><span class="fa fa-2x fa-chevron-right"></span></div>
         </ul>
     </div>
-    <div class="home-news">
-        <?php knews(); ?>
+    <div class="srow home-news">
+        <div class="scol hn-news alpha">
+            <?php knews(); ?>
+        </div>
+        <div class="scol hn-news">
+            <?php knews(); ?>
+        </div>
+        <div class="scol hn-fb omega">
+            <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="340" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+            <div id="fb-root"></div>
+            <script>(function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id))
+                        return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+        </div>
     </div>
 </section>
 <footer>

@@ -260,3 +260,8 @@ header.logo h1,header.logo p {margin:0;padding:0;font-weight: 200;font-size: 13p
     z-index: 1000;
     cursor: pointer;
 }
+
+.hn-news {
+    width: 320px;
+}
+.hn-fb {width: 340px;}
