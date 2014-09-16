@@ -1,9 +1,9 @@
 <?php
 
-function knews() {
+function knews($cat) {
     $args = array(
         'post_type' => 'post',
-        'cat' => 1,
+        'cat' => $cat,
         'posts_per_page' => 6
     );
     $knews = new WP_Query($args);
@@ -13,7 +13,7 @@ function knews() {
             if ($i == 0):
                 ?>
                 <div class="hsticky-news">
-                    <?php the_post_thumbnail('medium-thumb'); ?>
+                    <?php the_post_thumbnail('small-thumb'); ?>
                     <p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                     <p><?php the_excerpt(); ?></p>
                 </div>

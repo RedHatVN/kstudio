@@ -8,7 +8,8 @@ function kstudio_setup() {
     // Post thumbnails
     add_theme_support('post-thumbnails');
     add_image_size('post-thumbnail', 600, 9999);
-    add_image_size('medium-thumb', 520, 280, true);
+    add_image_size('medium-thumb', 520, 325, true);
+    add_image_size('small-thumb', 320, 180, true);
 
     // Post formats
     //add_theme_support('post-formats', array('aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'));

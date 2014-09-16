@@ -30,10 +30,10 @@
     </div>
     <div class="srow home-news">
         <div class="scol hn-news alpha">
-            <?php knews(); ?>
+            <?php knews(1); ?>
         </div>
         <div class="scol hn-news">
-            <?php knews(); ?>
+            <?php knews(2); ?>
         </div>
         <div class="scol hn-fb omega">
             <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="340" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
